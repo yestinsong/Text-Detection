@@ -8,11 +8,11 @@
 using namespace std;
 using namespace cv;
 
-///class used by recognize the non-text text line
+///class used by Verication for recognizing the non-text text line
 class FilterBox{
 public:
 	FilterBox();
-	bool Keep(cv::Mat& ima);
+	bool Keep(cv::Mat& ima);///Extract feature from image patch by FFT, and then come though the pre-build classifier
 private:
 	cv::Mat pMean;
 	cv::Mat pEigVecs;
