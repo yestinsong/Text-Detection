@@ -12,7 +12,7 @@ using namespace cv;
 class FilterBox{
 public:
 	FilterBox();
-	bool Keep(cv::Mat& ima);///Extract feature from image patch by FFT, and then come though the pre-build classifier
+	bool Keep(cv::Mat& ima);///Extract feature from image patch by FFT and PCA, and then come though the pre-build classifier
 private:
 	cv::Mat pMean;
 	cv::Mat pEigVecs;
