@@ -3,7 +3,7 @@
 bool FilterBox::Keep(cv::Mat& Image)
 {
 		Rows = cv::Mat::zeros(1,SampleDion,CV_32FC1);
-	    cv::Mat floatImage = cv::Mat( Image.rows,Image.cols,CV_32FC1);
+	    	cv::Mat floatImage = cv::Mat( Image.rows,Image.cols,CV_32FC1);
 		cv::cvtColor(Image,Image,CV_BGR2GRAY);
 		Image.convertTo(floatImage, CV_32F, 1.0/255);
 		cv::dct(floatImage,floatImage);
