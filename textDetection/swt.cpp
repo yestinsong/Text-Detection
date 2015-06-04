@@ -7,7 +7,7 @@ Swt::Swt()
 
 }
 
-void Swt::initialize(Mat& image,vector<vector<cv::Point2i>>& cc)
+void Swt::initialize(Mat& image,vector< vector<cv::Point2i> >& cc)
 {
 	image.copyTo(this->GrayImage);
 	this->height = GrayImage.rows;
@@ -58,7 +58,7 @@ void Swt::inversegradient()
 	}
 }
 
-void Swt::Edges(vector< vector<cv::Point2i>>& cc)
+void Swt::Edges(vector< vector<cv::Point2i> >& cc)
 {
 	int ccsize = cc.size();
 	for(int i = 0 ;i< ccsize;i++)
@@ -128,7 +128,7 @@ void Swt::td_findPairLine()
 	}
 }
 
-void Swt::displayStrokeWidth(vector<vector<cv::Point2i>>& cc)
+void Swt::displayStrokeWidth(vector< vector<cv::Point2i> >& cc)
 {
 	cv::Mat show = cv::Mat::zeros(height,width,CV_8UC3);
 	cv::Vec3b  point = Vec3b(0,0,0);

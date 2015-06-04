@@ -20,7 +20,7 @@ private:
 class PolyGroundTruthSet{
 public:
 	void display(cv::Mat& image);
-	void push_back(PolyGroundTruth& pgt){sets.push_back(pgt);}
+	void push_back(PolyGroundTruth pgt){sets.push_back(pgt);}
 	void clear(){sets.clear();}
 private:
 	std::vector<PolyGroundTruth>	sets;

@@ -15,13 +15,13 @@ using namespace cv;
 class Swt{
 public:
 	Swt();
-	void initialize(Mat& image,vector< vector<cv::Point2i>>& cc);
+	void initialize(Mat& image,vector< vector<cv::Point2i> >& cc);
 	void getStrokeWidth(vector<cv::Point2i>& component, Candidate& cad);
 	void gradient();
 	void inversegradient();
-	void Edges(vector< vector<cv::Point2i>>& cc);
+	void Edges(vector< vector<cv::Point2i> >& cc);
 	void td_findPairLine();
-	void displayStrokeWidth(vector<vector<cv::Point2i>>& cc);
+	void displayStrokeWidth(vector< vector<cv::Point2i> >& cc);
 
 private:
 	cv::Mat StrokeImage;

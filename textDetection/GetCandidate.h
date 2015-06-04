@@ -20,7 +20,7 @@ private:
 	cv::RandomTrees CharacterClassifier;
 	cv::Mat oriBgrImage_8UC3;
 	cv::Mat gray_source_image;
-	vector<vector<cv::Point2i>> strVectorStore;
+	vector< vector<cv::Point2i> > strVectorStore;
 	vector<Candidate> ccStore;
 	vector<Candidate> candidateStore;
 };

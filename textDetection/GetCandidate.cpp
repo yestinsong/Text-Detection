@@ -6,7 +6,7 @@ std::vector<Candidate> GetCandidate::run(cv::Mat& Image)
 {
 	oriBgrImage_8UC3 = Image;
 	cv::cvtColor(oriBgrImage_8UC3,gray_source_image,CV_BGR2GRAY);
-	CharacterClassifier.load("CharacterClassifier");
+	CharacterClassifier.load("./resource/CharacterClassifier");
 	featureExtract();
 	swtprocess();
 	Filter();

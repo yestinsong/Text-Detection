@@ -48,7 +48,7 @@ void LinkCandidate::finalresult()
 		index++;
 	}
 
-	vector<vector<int>> store(index + 2);
+	vector< vector<int> > store(index + 2);
 	for(int i = 0;i< CandidateNum;i++)
 	{
 		store[candidateStore[i].chuan].push_back(i);

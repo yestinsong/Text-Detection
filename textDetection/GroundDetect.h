@@ -1,13 +1,14 @@
 #ifndef _GROUND_DETECT_
 #define _GROUND_DETECT_
-#include<string>
-#include"Candidate.h"
-#include"PolyGroundTruth.h"
-#include"GetCandidate.h"
-#include"LinkCandidate.h"
-#include"VericaficationTextLine.h"
-#include"Fmeasure.h"
+#include <string>
+#include "Candidate.h"
+#include "PolyGroundTruth.h"
+#include "GetCandidate.h"
+#include "LinkCandidate.h"
+#include "VericaficationTextLine.h"
+#include "Fmeasure.h"
 #include "headline.h"
+
 ///Main class for text detection
 class GroundDetect{
 public:

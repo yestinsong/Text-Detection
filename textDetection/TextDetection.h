@@ -5,7 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include"GroundDetect.h"
+#include "GroundDetect.h"
 
 class TextDetection{
 public:

@@ -8,8 +8,8 @@ using namespace cv;
 int main()
 {
 	vector<string> gtset;string line;
-	cv::Mat image = cv::imread("demo.jpg");
-	ifstream fin("gt_demo");
+	cv::Mat image = cv::imread("./resource/demo.jpg");
+	ifstream fin("./resource/gt_demo");
 	while(getline(fin,line))
 	{
 		gtset.push_back(line);

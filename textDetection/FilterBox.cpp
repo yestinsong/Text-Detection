@@ -19,13 +19,13 @@ FilterBox::FilterBox()
 {
 	SampleReduceDion = 30;
 	SampleDion = 1000;
-	rtrees.load("TextLineClassifier");
+	rtrees.load("./resource/TextLineClassifier");
 	pMean = cv::Mat(1,SampleDion,CV_32FC1);
-	ifstream fin("pMeanFFT");
+	ifstream fin("./resource/pMeanFFT");
 	for(int i = 0; i< SampleDion;i++)
 		fin>>pMean.at<float>(0,i);
 	fin.close();fin.clear();
-	fin.open("pEigVecsFFT");
+	fin.open("./resource/pEigVecsFFT");
 	pEigVecs = cv::Mat(SampleDion,SampleReduceDion,CV_32FC1);
 	for(int i = 0; i< SampleDion;i++)
 		for(int j = 0;j<SampleReduceDion;j++)

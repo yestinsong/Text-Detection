@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+g++ Candidate.h Demo.cpp FilterBox.cpp FilterBox.h Fmeasure.cpp Fmeasure.h GetCandidate.cpp GetCandidate.h headline.h LinkCandidate.cpp LinkCandidate.h LinkCandidateUtil.cpp LinkCandidateUtil.h PolyGroundTruth.cpp PolyGroundTruth.h swt.cpp swt.h swtUtil.cpp swtUtil.h TextDetection.cpp TextDetection.h Tools.cpp Tools.h VericaficationTextLine.cpp VericaficationTextLine.h -o TestDetection   `pkg-config --cflags --libs opencv`
