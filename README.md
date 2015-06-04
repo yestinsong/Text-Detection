@@ -1,9 +1,9 @@
 # Mser-Swt-Text-Detection-With-Verification
 Text Detection System with MSER , SWT and Text Verification(fft and pca)
 
-This file is built by Virsual Studio 2010 and depended on OPENCV 2.4.9
+This file is built by g++ and depended on OPENCV 2.4.9
 
-You can download the all codes and fill these in a project of VS, then build the code.
+You can download the all codes and run the build.sh
 
 The Demo of the project is  Demo.cpp
 
